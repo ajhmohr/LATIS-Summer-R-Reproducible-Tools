@@ -1,0 +1,9 @@
+#User specific hidden files
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+
+#ignore individual folder's R proj file
+*.Rproj
