@@ -1,14 +1,12 @@
 ## ATUS Prep and visualization (from IPUMS)
 
-#set working directory
-setwd("~/Documents/WorkshopMaterials/PsyRBootcamp/8. Intro to R Markdown")
-
 #load in packages
 library(haven)
-library(tidyverse) #loads ggplot2 and dplyr
+library(dplyr)
+library(ggplot2)
 
 #use SPSS for value labels
-atus.spss <- read_spss("atus_00009.sav")
+atus.spss <- read_spss("data/atus_00009.sav")
 atus <- as_factor(atus.spss)
 
 #remove unwanted variables
